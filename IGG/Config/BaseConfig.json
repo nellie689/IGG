@@ -1,0 +1,132 @@
+{
+    "general": {
+        "WD": 0.0001,
+        "leakyrelu": 0.02,
+        "blocks": 3,
+        "dim_linear_block": 1024,  
+        "activation_": "zreLU",
+        "activation": "leakyrelu",
+        "__activation": "leakyrelu",
+        "n_gpu": 1,
+        "seed": 1234,
+        "deterministic": 1,
+        "num_steps": 7,
+        "module_name": "ComplexUnsupervised01",
+        "module_subType": "svf",
+        "mode": "train",
+        "shootingType": "svf",
+        "____channels": [16,64,64,32,16],
+        "__channels": [32,128,128,64,32],
+        
+        "channels": [10,20,20,10,10],
+        
+        
+        "_channels": [32,64,32,32,16],
+        "channels_testtime": [32,32,32,32,16],
+
+        "___channels": [64,128,64],
+        "Echannels": [10,20,20],
+        "Dchannels": [20,2,10,10]
+    },
+    "LStrategy": {
+        "max_epochs": 6000,
+        "pretrain": false,
+        "start_epoch": 0,
+        "train_batch_size": 32,
+        " train_batch_size": 10,
+        "__test_batch_size__": 32,
+        "Registration": {
+            "_lr": 0.0005,
+            "lr": 0.001,
+            "lr_decay": 0.8,
+            "lr_decay_epoch": 100
+        },
+        "Epdiff": {
+            "lr": 0,
+            "lr_decay": 0,
+            "lr_decay_epoch": 0
+        }
+    },
+    "LossWeightSvf": {
+        " WSimi": 0.5,
+        " WReg": 0.03,
+        " WEpdiff": 0,
+
+        "WSimi": 1.0,
+        "WReg": 0.03,
+        "WEpdiff": 0,
+        
+
+        "_WSimi_": 0.5,
+        "_WReg_": 10,
+        "_WEpdiff_": 1.0
+    },
+    "LossWeightLddmm": {
+        "WSimi": 0.5,
+        "WEpdiff": 0,
+        "sigma": 0.02,
+        "WReg": 1.0,
+        "WEPDiff_Mse": 0.0,
+        "WEPDiff_Relative": 0.0,
+
+
+        "  alpha ": 3.0,
+        "  power ": 6,
+        "  gamma ": 1.0,
+
+        
+        "alpha": 2.0,
+        "power": 3,
+        "gamma": 1.0,
+        
+
+        "_ModesFno_": 4,
+        "_WidthFno_": 20,
+        "_LossType_": "MSE",
+        "_WSimi_": 0.5,
+        "_WEpdiff_": 1.0
+    },
+    "DataSet": {
+        "testlen": 32,
+        "trainlenscale": 1,
+
+        "_name_": "BullEye",
+
+        "=train_type": "BullEye",
+        "=test_type": "BullEye",
+        "=dataName": "BullEye128",
+        "=data_base_size": 128,
+
+        " train_type": "Mnist",
+        " test_type": "Mnist",
+        " dataName": "Mnist64",
+        " data_base_size": 64,
+
+        "train_type": "Shape256Affine",
+        "test_type": "Shape",
+        "dataName": "Shape",
+        "data_base_size": 256,
+
+        "train_img_size": 128,
+        "test_img_size": 128,
+        "crop_size": 16
+    },
+    "DataPath": {
+        "Mnist64":  "/data/DataReAffine_64/Mnist_affined_64.mat",
+        "Ellpise64": "/data/Ellipse.mat",
+        "QuickDraw64": "/data/DataReAffine_64/quickdraw_reorganize_affined_64.mat",
+        "BullEye64" : "/data/DataReAffine_64/bull_eye_64.mat",
+        "BullEye128":  "/data/2400_all_eyes_128.mat",
+        "Brain128":  "/data/Brain2D_128.mat",
+        " Shape256":  "/data/DataReAffine_64/2DShape_256.mat",
+        "Shape":  "/data/DataReAffine_64/2DShape_256_Affine.mat",
+        "Plant":  "/data/DataReAffine_64/Plant204_TXT.mat",
+        "OASIS32D":  "/data/DataReAffine_64/OASIS3256_MR_TXT.mat",
+        "PlantGray":  "/data/DataReAffine_64/Plant204_TXT.mat",
+        "PlantGray2":  "/data/DataReAffine_64/Plant204_TXT.mat",
+        "PlantR2": "/data/DataReAffine_64/Plant204_TXT.mat",
+        "PlantScaled":  "/data/DataReAffine_64/Plant204_TXT.mat",
+        "PlantGray3":  "/data/DataReAffine_64/Plant204_TXT.mat",
+        "PlantGray4":  "/data/DataReAffine_64/Plant204_3Size.mat"
+    }
+}
