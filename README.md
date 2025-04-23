@@ -1,6 +1,6 @@
 ************************** IGG ************************** 
 
-IGG: Image Generation Informed by Geodesic Dynamics in Deformation Spaces (http://arxiv.org/abs/COMING SOON).
+IGG: Image Generation Informed by Geodesic Dynamics in Deformation Spaces (https://arxiv.org/pdf/2504.07999).
 
 
 ************************** Disclaimer ************************** 
