@@ -9,16 +9,11 @@ This code is only for research purpose and non-commercial use only, and we reque
 TLRN: Temporal Latent Residual Networks For Large Deformation Image Registration  
 Nian Wu, Jiarui Xing, and Miaomiao Zhang. Information Processing in Medical Imaging (IPMI 2025).
 
-@article{wu2025igg,
-
-  title={IGG: Image Generation Informed by Geodesic Dynamics in Deformation Spaces},
-  
-  author={Wu, Nian and Jayakumar, Nivetha and Xing, Jiarui and Zhang, Miaomiao},
-  
-  journal={arXiv preprint arXiv:2504.07999},
-  
-  year={2025}
-  
+@article{wu2025igg,  
+  title={IGG: Image Generation Informed by Geodesic Dynamics in Deformation Spaces},  
+  author={Wu, Nian and Jayakumar, Nivetha and Xing, Jiarui and Zhang, Miaomiao},  
+  journal={arXiv preprint arXiv:2504.07999},  
+  year={2025}  
 }
 
 ************************** Setup ************************** 
