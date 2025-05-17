@@ -6,9 +6,8 @@ IGG: Image Generation Informed by Geodesic Dynamics in Deformation Spaces (https
 ************************** Disclaimer ************************** 
 
 This code is only for research purpose and non-commercial use only, and we request you to cite our research paper if you use it:  
-TLRN: Temporal Latent Residual Networks For Large Deformation Image Registration  
-Nian Wu, Jiarui Xing, and Miaomiao Zhang. Information Processing in Medical Imaging (IPMI 2025).
-
+IGG: Image Generation Informed by Geodesic Dynamics in Deformation Spaces  
+Nian Wu, Nivetha Jayakumar, Jiarui Xing, and Miaomiao Zhang. Information Processing in Medical Imaging (IPMI 2025).
 @article{wu2025igg,  
   title={IGG: Image Generation Informed by Geodesic Dynamics in Deformation Spaces},  
   author={Wu, Nian and Jayakumar, Nivetha and Xing, Jiarui and Zhang, Miaomiao},  
@@ -26,23 +25,33 @@ The main dependencies are listed below, the other packages can be easily install
 * matplotlib
 * numpy
 * SimpleITK
+* LagoMorph
 
-
+Tips:
+LagoMorph contains the core implementation for solving the geodesic shooting equation (i.e., the EPDiff equation) under the LDDMM framework.
+The code repository is available at: https://github.com/jacobhinkle/lagomorph
 ************************** Usage ************************** 
 
 Below is a *QuickStart* guide on how to use TLRN for network training and testing.
 
-If you want to train you own model, please run:  
-bash TLRN/run.sh, with the parameter "mode" set as "train" in the bash script.
-
-If you want to test the model, please run:  
-bash TLRN/run.sh, with the parameter "mode" set as "test" in the bash script.
-
-Required Input Data: time-series image.
-
-************************** Tips ************************** 
-
-To facilitate running the code, have uploaded an exemplary testing data "lemniscate_example_series.mat" in the directory "TLRN/datasets". We also provide pretrained network weights for TLRN and Voxelmorph in directory "TLRN/datasets".
+Our model IGG consists of two key phases:
 
 
+Phase 1: Autoencoder-Based Registration Network
+This module learns latent representations of geodesic paths in deformation space using an autoencoder framework.
 
+To train and test this module, run:
+bash IGG/IGG_AutoEncoder_Train.sh
+bash IGG/IGG_AutoEncoder_Test.sh
+
+Required Input: Paired source and target images.
+
+
+Phase 2: Latent Geodesic Diffusion Model
+This module learns the distribution over latent geodesic trajectories produced in Phase 1, using a conditional diffusion process.
+
+To train and test the diffusion model, run:
+bash IGG/IGG_DiFuS_Train.sh
+bash IGG/IGG_DiFuS_Test.sh
+
+Required Input: A template image and its corresponding text instruction.
