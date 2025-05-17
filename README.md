@@ -57,3 +57,23 @@ bash IGG/IGG_DiFuS_Train.sh
 bash IGG/IGG_DiFuS_Test.sh
 
 Required Input: A template image and its corresponding text instruction.
+
+
+
+
+## 🚀 Usage
+
+Below is a **QuickStart guide** on how to use **IGG** for network training and testing.
+
+---
+
+### 🔹 **Phase 1: Autoencoder-Based Registration Network**
+
+This module learns **latent representations of geodesic paths** in deformation space using an autoencoder framework.
+
+**To train and test this module**, run:
+
+```bash
+bash IGG/IGG_AutoEncoder_Train.sh
+bash IGG/IGG_AutoEncoder_Test.sh
+
