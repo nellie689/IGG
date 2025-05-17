@@ -32,35 +32,6 @@ LagoMorph contains the core implementation for solving the geodesic shooting equ
 The code repository is available at: https://github.com/jacobhinkle/lagomorph
 
 
-************************** Usage ************************** 
-
-Below is a *QuickStart* guide on how to use TLRN for network training and testing.
-
-Our model IGG consists of two key phases:
-
-
-Phase 1: Autoencoder-Based Registration Network
-This module learns latent representations of geodesic paths in deformation space using an autoencoder framework.
-
-To train and test this module, run:
-bash IGG/IGG_AutoEncoder_Train.sh
-bash IGG/IGG_AutoEncoder_Test.sh
-
-Required Input: Paired source and target images.
-
-
-Phase 2: Latent Geodesic Diffusion Model
-This module learns the distribution over latent geodesic trajectories produced in Phase 1, using a conditional diffusion process.
-
-To train and test the diffusion model, run:
-bash IGG/IGG_DiFuS_Train.sh
-bash IGG/IGG_DiFuS_Test.sh
-
-Required Input: A template image and its corresponding text instruction.
-
-
-
-
 ## 🚀 Usage
 
 Below is a **QuickStart guide** on how to use **IGG** for network training and testing.
@@ -69,11 +40,27 @@ Below is a **QuickStart guide** on how to use **IGG** for network training and t
 
 ### 🔹 **Phase 1: Autoencoder-Based Registration Network**
 
-This module learns **latent representations of geodesic paths** in deformation space using an autoencoder framework.
+This module learns **latent representations of geodesic paths** in deformation space using an autoencoder registration network.
 
 **To train and test this module**, run:
 
 ```bash
 bash IGG/IGG_AutoEncoder_Train.sh
 bash IGG/IGG_AutoEncoder_Test.sh
+
+Required Input: Paired source and target images.
+
+
+
+### 🔹 **Phase 2: Latent Geodesic Diffusion Model**
+
+This module learns the **distribution over latent geodesic trajectories obtained from Phase 1**, using a conditional diffusion process..
+
+**To train and test the diffusion model**, run:
+
+```bash
+bash IGG/IGG_DiFuS_Train.sh
+bash IGG/IGG_DiFuS_Test.sh
+
+Required Input: A template image and its corresponding text instruction.
 
