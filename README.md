@@ -30,6 +30,8 @@ The main dependencies are listed below, the other packages can be easily install
 Tips:
 LagoMorph contains the core implementation for solving the geodesic shooting equation (i.e., the EPDiff equation) under the LDDMM framework.
 The code repository is available at: https://github.com/jacobhinkle/lagomorph
+
+
 ************************** Usage ************************** 
 
 Below is a *QuickStart* guide on how to use TLRN for network training and testing.
