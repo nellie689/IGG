@@ -1,8 +1,8 @@
-## 🚀 IGG
+## 🧭 IGG
 
 IGG: Image Generation Informed by Geodesic Dynamics in Deformation Spaces (https://arxiv.org/pdf/2504.07999).
 
-## 🚀 Disclaimer
+## 💡 Disclaimer
 
 This code is only for research purpose and non-commercial use only, and we request you to cite our research paper if you use it:  
 IGG: Image Generation Informed by Geodesic Dynamics in Deformation Spaces  
@@ -14,7 +14,7 @@ Nian Wu, Nivetha Jayakumar, Jiarui Xing, and Miaomiao Zhang. Information Process
   year={2025}  
 }
 
-## 🚀 Setup
+## 📌 Setup
 
 The main dependencies are listed below, the other packages can be easily installed with "pip install" according to the hints when running the code.
 
