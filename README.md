@@ -8,6 +8,9 @@ This code is only for research purpose and non-commercial use only, and we reque
 **IGG: Image Generation Informed by Geodesic Dynamics in Deformation Spaces** 
 Nian Wu, Nivetha Jayakumar, Jiarui Xing, and Miaomiao Zhang. *Information Processing in Medical Imaging (IPMI 2025)*.
 
+**IGG: Image Generation Informed by Geodesic Dynamics in Deformation Spaces**  
+Nian Wu, Nivetha Jayakumar, Jiarui Xing, and Miaomiao Zhang.
+
 @article{wu2025igg,  
   title={IGG: Image Generation Informed by Geodesic Dynamics in Deformation Spaces},  
   author={Wu, Nian and Jayakumar, Nivetha and Xing, Jiarui and Zhang, Miaomiao},  
