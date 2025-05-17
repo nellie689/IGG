@@ -242,9 +242,9 @@ def main():
     visjpg = snapshot_path + f'/view_res_{args.cond_scale}_{args.src_cond_scale}/{Config["DataSet"]["test_type"]}/{Config["DataSet"]["test_img_size"]}'
     Config["general"]["visjpg"] = visjpg
 
-    netdic = {'JulyGDN_DifuS': NetJuly(Config).cuda()}
-    trainer = {'JulyGDN_DifuS': trainer_GDN_DiFuS}
-    tester = {'JulyGDN_DifuS': tester_GDN_DiFuS}
+    netdic = {'JulyGDN_DifuS': NetJuly(Config).cuda(), 'JulyGDN': NetJuly(Config).cuda()}
+    trainer = {'JulyGDN_DifuS': trainer_GDN_DiFuS, 'JulyGDN': trainer_GDN}
+    tester = {'JulyGDN_DifuS': tester_GDN_DiFuS, 'JulyGDN': tester_GDN}
     net = netdic[module_name]
    
 
