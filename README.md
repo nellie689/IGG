@@ -48,8 +48,8 @@ This module learns **latent representations of geodesic paths** in deformation s
 bash IGG/IGG_AutoEncoder_Train.sh
 bash IGG/IGG_AutoEncoder_Test.sh
 
-Required Input: Paired source and target images.
-
+Required Input: Paired source and target images. 
+```
 
 
 ### 🔹 **Phase 2: Latent Geodesic Diffusion Model**
@@ -63,4 +63,4 @@ bash IGG/IGG_DiFuS_Train.sh
 bash IGG/IGG_DiFuS_Test.sh
 
 Required Input: A template image and its corresponding text instruction.
-
+```
